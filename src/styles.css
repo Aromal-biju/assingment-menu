@@ -1,0 +1,175 @@
+:root{
+  --bg: #fafaf8;
+  --card: #ffffff;
+  --accent: #d9534f;
+  --muted: #6b6b6b;
+  --green: #2e8b57;
+  --shadow-sm: 0 2px 8px rgba(20,20,20,0.04);
+  --shadow-md: 0 4px 16px rgba(20,20,20,0.08);
+  --transition: all 0.3s ease;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #222;
+  line-height: 1.6;
+  padding: 24px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 32px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.title {
+  font-size: 2.5rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+.tagline {
+  margin: 8px 0 0;
+  color: var(--muted);
+  font-size: 1.05rem;
+}
+
+.menu-section {
+  margin: 32px 0;
+}
+
+.menu-section h2 {
+  font-size: 1.5rem;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 12px;
+  margin-bottom: 16px;
+  color: #222;
+}
+
+.menu-grid {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 18px;
+  box-shadow: var(--shadow-sm);
+  transition: var(--transition);
+  border: 1px solid #f0f0f0;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+}
+
+.menu-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+.menu-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+}
+
+.menu-card h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  font-weight: 600;
+  flex: 1;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--accent);
+  font-size: 1.1rem;
+  white-space: nowrap;
+}
+
+.category {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin: 8px 0;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.description {
+  margin: 8px 0 14px;
+  color: #555;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.veg-badge {
+  background: #e6f8ef;
+  color: var(--green);
+  border: 1px solid rgba(46,139,87,0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.nonveg-badge {
+  background: #fff5f5;
+  color: var(--accent);
+  border: 1px solid rgba(217,83,79,0.2);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
+.restaurant-info {
+  margin: 32px 0;
+}
+
+.footer {
+  margin-top: 40px;
+  padding: 20px;
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  color: var(--muted);
+  border-top: 1px solid #eee;
+  font-size: 0.95rem;
+}
+
+a { 
+  color: var(--accent);
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+a:hover { 
+  color: var(--accent);
+  text-decoration: underline;
+}
